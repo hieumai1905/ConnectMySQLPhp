@@ -14,7 +14,6 @@ class ConnectDatabase
 //        }
         if (!self::$connection) {
             self::$connection = mysqli_connect($GLOBALS['HOSTNAME'], $GLOBALS['USERNAME'], $GLOBALS['PASSWORD'], $GLOBALS['DATABASENAME']) or die ('Connect error');
-
         }
         return self::$connection;
     }
